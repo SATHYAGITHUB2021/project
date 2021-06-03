@@ -1,3 +1,4 @@
+all: coffee tea
 coffee:
 	@echo making coffee
 
