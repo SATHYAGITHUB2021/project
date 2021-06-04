@@ -11,7 +11,7 @@ if [ $A -nq $B ]; then
   echo A is not equal to B
 fi
 #if else statement
-if [ $A -eq $B ];then
+if [ $A -ne $B ];then
   echo A is equal to B
 else
   echo A is not equal to B
