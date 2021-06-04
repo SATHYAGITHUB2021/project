@@ -10,7 +10,6 @@ fi
 if
   echo A is not equal to B
 fi
-
 #if else statement
 if [ $A == $B ];then
   echo A is equal to B
