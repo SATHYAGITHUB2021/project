@@ -16,6 +16,9 @@ if [ $A -eq $B ];then
 else
   echo A is not equal to B
 fi
+if [ n $A]; then
+  echo A has length more than 0
+fi
 
 
 
