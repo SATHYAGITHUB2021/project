@@ -2,4 +2,4 @@
 
 topics
 Makefile
-ok
+components
