@@ -21,10 +21,10 @@ if [ -n $A ]; then
   echo A has length more than 0
 fi
 
-if [-f $FILE]; then
+if [ -f $FILE ]; then
   echo file exist
 else
-  echo file does not exist
+  echo "$FILE does not exist"
 fi
 
 
