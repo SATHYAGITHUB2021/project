@@ -1,6 +1,6 @@
 #intializing two variable
-A=100
-B=200
+A=$1
+B=$2
 #if statement
 #check weather they are equal
 if [ $A == $B ]; then
