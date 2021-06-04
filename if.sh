@@ -1,6 +1,7 @@
 #intializing two variable
 A=$1
 B=$2
+FILE=$3
 #if statement
 #check weather they are equal
 if [ $A -eq $B ]; then
@@ -19,6 +20,13 @@ fi
 if [ -n $A ]; then
   echo A has length more than 0
 fi
+
+if [-f $FILE]; then
+  echo file exist
+else
+  echo file does not exist
+fi
+
 
 
 
