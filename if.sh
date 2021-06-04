@@ -3,11 +3,11 @@ A=$1
 B=$2
 #if statement
 #check weather they are equal
-if [ $A == $B ]; then
+if [ $A -eq $B ]; then
   echo A is equal to B
 fi
 #check weather they are not equal
-if [ $A != $B ]; then
+if [ $A -eq $B ]; then
   echo A is not equal to B
 fi
 #if else statement
