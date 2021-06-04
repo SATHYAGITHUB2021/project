@@ -7,7 +7,7 @@ if [ $A -eq $B ]; then
   echo A is equal to B
 fi
 #check weather they are not equal
-if [ $A -eq $B ]; then
+if [ $A -nq $B ]; then
   echo A is not equal to B
 fi
 #if else statement
