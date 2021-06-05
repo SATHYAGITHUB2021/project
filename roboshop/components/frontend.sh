@@ -2,5 +2,5 @@
 source components/common.sh
 
 HEAD "INSTALLING NGINX"
-yum insta nginx -y &>>/tmp/roboshop.log
+yum install nginx -y &>>/tmp/roboshop.log
 STAT $?
