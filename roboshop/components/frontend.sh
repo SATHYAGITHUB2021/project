@@ -18,7 +18,10 @@ HEAD "Delete old HTML DOCS"
 rm -rf /usr/share/nginx/html/*
 STAT $?
 
-# unzip /tmp/frontend.zip
+HEAD "Extract Downloaded Content"
+unzip -d /usr/share/nginx/html /tmp/frontend.zip
+STAT $?
+
 # mv frontend-main/* .
 # mv static/* .
 # rm -rf frontend-master README.md
