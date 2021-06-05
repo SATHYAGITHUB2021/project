@@ -2,19 +2,19 @@
 source components/common.sh
 rm -f /tmp/roboshop.log
 
-HEAD "Installing Nginx"
+HEAD "Installing Nginx\t"
 yum install nginx -y &>>/tmp/roboshop.log
 STAT $?
 
-HEAD "Start Nginx\t"
+HEAD "Start Nginx\t\t"
 systemctl enable nginx &>>/tmp/roboshop.log && systemctl start nginx &>>/tmp/roboshop.log
 STAT $?
 
-HEAD "Download from Github"
+HEAD "Download from Github\t"
 curl -s -L -o /tmp/frontend.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zip"
 STAT $?
 
-HEAD "Delete old HTML DOCS"
+HEAD "Delete old HTML DOCS\t"
 rm -rf /usr/share/nginx/html/*
 STAT $?
 
