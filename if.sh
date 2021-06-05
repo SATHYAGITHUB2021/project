@@ -27,6 +27,14 @@ else
   echo "$FILE does not exist"
 fi
 
+read -p 'type user name:' name
+if [ "$name" == "root" ]
+then
+  echo $name is admin user.
+else
+  echo $name is a normal user.
+fi
+
 
 
 
