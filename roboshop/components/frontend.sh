@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo -e "\e[1;31m INSTALLING NGINX ...\e[0m"
+echo -n -e "\e[1;31m INSTALLING NGINX ...\e[0m"
 yum install nginx -y &>>/tmp/roboshop.log
 
 if [ $? -eq 0 ]; then
