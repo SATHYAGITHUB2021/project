@@ -11,10 +11,11 @@ enabled=1
 gpgkey=https://www.mongodb.org/static/pgp/server-4.2.asc' >/etc/yum.repos.d/mongodb.repo
 STAT $?
 
-HEAD "Install MongoDB"
+HEAD "Install MongoDB\t"
 yum install -y mongodb-org &>>/tmp/roboshop.log
 STAT $?
 
-HEAD "Start MongoDB Service"
+HEAD "Start MongoDB Service\t"
 systemctl enable mongod &>>/tmp/roboshop.log && systemctl start mongod &>>/tmp/roboshop.log
 STAT $?
+
