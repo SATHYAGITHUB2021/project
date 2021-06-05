@@ -1,5 +1,5 @@
 HEAD() {
-  echo -n -e "\e[1m $1\t\t \e[om"
+  echo -n -e "\e[1m $1\t\t \e[0m"
 }
 STAT() {
 if [ $1 -eq 0 ]; then
