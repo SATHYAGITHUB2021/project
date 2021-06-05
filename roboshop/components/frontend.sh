@@ -2,6 +2,7 @@
 
 echo -e "\e[1;31m INSTALLING NGINX ...\e[0m"
 yum install nginx -y &>>/tmp/roboshop.log
+STAT $?
 STAT() {
   if [ $1 -eq 0 ]; then
   echo -e "\e[1;32mDone\e[0m"
@@ -11,4 +12,4 @@ else
   exit 1
 fi
 }
-STAT $?
+
