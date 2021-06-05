@@ -16,7 +16,7 @@ yum install -y mongodb-org &>>/tmp/roboshop.log
 STAT $?
 
 HEAD "Update Listen Address in MongoDB"
-sed -e 's/127.0.0.1/0.0.0.0/' /etc/mongod.conf
+sed -e 's/127.0.0.1/0.0.0.0/' /etc/mongod.conf &>>/tmp/roboshop.log
 STAT $?
 
 HEAD "Start MongoDB Service\t"
