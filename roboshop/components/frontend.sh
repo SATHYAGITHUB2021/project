@@ -8,4 +8,5 @@ if [ $STAT -eq 0 ]; then
 else
   echo -e "\e[1;31m Filed\e[0m"
   echo -e "\e[1;32m Check the log for more details...Log-file : /tmp/roboshop.log\e[0m"
+  exit 1
 fi
