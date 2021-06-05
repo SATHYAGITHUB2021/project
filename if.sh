@@ -30,7 +30,7 @@ fi
 read -p 'type user name:' name
 if [ "$name" == "root" ]
 then
-  echo $name is admin user.
+  echo $name is a admin user.
 else
   echo $name is a normal user.
 fi
