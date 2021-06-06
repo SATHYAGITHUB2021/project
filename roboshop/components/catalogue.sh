@@ -9,10 +9,13 @@ STAT $?
 
 HEAD "Add Roboshop App User\t\t"
 id roboshop &>>/tmp/roboshop.log
-if [ $? -eq 0]; then
+if [ $? -eq 0 ]; then
   echo "user is already there, so skipping the user creation" &>>/tmp/roboshop.log
-adduser roboshop &>>/tmp/roboshop.log
-STAT $?
+  STAT $?
+else
+  adduser roboshop &>>/tmp/roboshop.log
+  STAT $?
+fi
 
 HEAD "Download app from Github\t"
 curl -s -L -o /tmp/catalogue.zip "https://github.com/roboshop-devops-project/catalogue/archive/main.zip" &>>/tmp/roboshop.log
