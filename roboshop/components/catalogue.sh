@@ -33,7 +33,7 @@ HEAD "Fix Permissions to App Content\t"
 chown roboshop:roboshop /home/roboshop -R
 STAT $?
 
-HEAD "Setup SystemD Srevices"
+HEAD "Setup SystemD Srevices\t\t"
 sed -i -e 's/MONGO_DNSNAME/mongodb.roboshop.internal/' /home/roboshop/catalogue/systemd.service && mv /home/roboshop/catalogue/systemd.service /etc/systemd/system/catalogue.service
 STAT $?
 
