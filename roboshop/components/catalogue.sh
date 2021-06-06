@@ -35,3 +35,5 @@ STAT $?
 
 HEAD "Fix Permissions to App Content"
 chown roboshop:roboshop /home/roboshop -R
+STAT $?
+
