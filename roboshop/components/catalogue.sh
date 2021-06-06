@@ -37,3 +37,11 @@ HEAD "Fix Permissions to App Content\t"
 chown roboshop:roboshop /home/roboshop -R
 STAT $?
 
+HEAD "Setup SystemD Service"
+sed -i -e 's/MONGO_DNSNAME/mongodb.roboshop.internal/' /home/roboshop/catalogue/systemd.service && mv /home/roboshop/catalogue/systemd.service /etc/systemd/system/catalogue.service
+STAT $?
+
+HEAD "Start Catalogue Service"
+systemctl demon-reload && systemctl enable catalogue &>>/tmp/roboshop.log && systemctl restart catalogue &>>/tmp/roboshop.log
+STAT $?
+
