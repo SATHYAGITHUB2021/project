@@ -23,7 +23,7 @@ STAT $?
 
 HEAD "Extract the downloaded Archive "
 cd /home/roboshop && rm -rf catalogue && unzip /tmp/catalogue.zip &>>/tmp/roboshop.log
-mv catalogue-main catalogue < y
+mv catalogue-main catalogue
 STAT $?
 
 HEAD "Install NodeJS Dependencies\t"
