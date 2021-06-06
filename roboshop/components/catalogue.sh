@@ -23,9 +23,6 @@ STAT $?
 
 HEAD "Extract the downloaded Archive "
 cd /home/roboshop && rm -rf catalogue && unzip /tmp/catalogue.zip &>>/tmp/roboshop.log
-STAT $?
-
-HEAD "Rename catalogue-main to catalogue"
 mv catalogue-main catalogue
 STAT $?
 
